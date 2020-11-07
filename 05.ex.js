@@ -41,3 +41,12 @@ log(typeof 0); // "number"
 log(typeof false); // "boolean"
 log(0 == false); // true
 log(0 === false); // false
+
+log('undefined' === false);
+log(typeof undefined); // undefined
+log(typeof false); // boolean
+
+log(typeof null); // object
+
+log(undefined === false); // false
+log(null === undefined); // false
