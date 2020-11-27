@@ -77,8 +77,8 @@
 
     ============
 
-    let userName = 'jin';
-    let userAge = 26; 
+    const userName = 'jin';
+    const userAge = 26; 
 
     const user = {
         userName,
