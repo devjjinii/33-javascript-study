@@ -39,7 +39,7 @@
         }
     }
 
-    let pizzaPrice = new PizzaFactory().createPizza("Seafood").getPrice();
+    const pizzaPrice = new PizzaFactory().createPizza("Seafood").getPrice();
     console.log(pizzaPrice); // 20000
 
     =================================
@@ -105,7 +105,7 @@
 
         }
     }
-    let 인스턴스 = new 클래스이름(); // 인스턴스 >> 객체  // 객체 생성 시 new 키워드를 사용
+    const 인스턴스 = new 클래스이름(); // 인스턴스 >> 객체  // 객체 생성 시 new 키워드를 사용
     // 단점 : 인스턴스를 생성할 때마다 내부의 모든 메서드가 독립적으로 만들어진다는 것
     ```
   * 프로토타입 방식
@@ -150,7 +150,7 @@ class Car extends Vehicle{
 }
 
 // constructor  >> new 키워드 필요
-let car = new Car("Circle", "BMW", "Black");
+const car = new Car("Circle", "BMW", "Black");
 
 // 이 때 부모의 getName 을 불러오려면 >> super
 console.log(car.getName()) // Circle / BMW (자식 getName)
@@ -170,6 +170,7 @@ let Rectangle = class { // 클래스 이름이 없는 표현식
     }
 }
 ```
+* 참고  : https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Classes
 ---
 ## New, constructor, instanceof, instance
 * new 연산자 : 사용자 정의 객체 타입 또는 내장 객체 타입의 인스턴스를 생성
